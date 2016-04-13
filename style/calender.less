@@ -1,0 +1,230 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+dl{
+	margin: 0;
+}
+
+ul,ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#calender{
+	width: 600px;
+	//height: 425px;
+	border: 1px solid #d2d2d2;
+	margin-left: -275px;
+	margin-top: -210px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.calender_head{
+	background-color: #f3f5fa;
+	height: 35px;
+	>div{
+		float: left;
+	}
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+.year_control a,i,.month_control a,i,.holiday_control i{
+	background: url(../images/point.gif) no-repeat;
+}
+.year_control,.month_control,.holiday_control,.back_today{
+	position: relative;
+	height: 20px;
+	border: 1px solid #c9cccf;
+	margin-left: 10px;
+	margin-top: 5px;
+	background: url(../images/back_head.gif) repeat-x;
+	.pre_year,.next_year,.pre_month,.next_month{
+		float: left;
+		width: 15px;
+		height: 20px;
+	}
+	.year_bar,.month_bar,.holiday_bar,.back_today_bar{
+		float: left;
+		line-height: 20px;
+		min-width:50px;
+		margin: 0 10px;
+		text-align: center;
+		i{
+			float: right;
+			background-position: 0 -50px;
+			width: 15px;
+			height: 12px;
+			cursor: pointer;
+			margin-right: -14px;
+		}
+		.year_now,.month_now,.holiday_now,.back_today_now{
+			font-size: 12px;
+		}
+	}
+	.holiday_bar{
+		min-width: 80px;
+		i{
+			margin-right: -8px;
+		}
+	}
+	.next_year,.next_month{
+		background-position: 0 -25px;
+	}
+	&:after{
+		content: "";
+		clear: both;
+
+	}
+	.year_list,.month_list,.holiday_list{
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		width: 70px;
+		margin-left: 15px;
+		background-color: #fff;
+		border: 1px solid #c9cccf;
+		text-align: center;
+		font-size: 12px;
+		padding-top: 5px;
+		height: 100px;
+		overflow: auto;
+		li{
+			cursor: pointer;
+			color: #9a9a9a;
+			height: 18px;
+			line-height: 18px;
+			&:hover{
+				background-color: #77a1b4;
+				color: #fff;
+			}
+		}
+	}
+	.holiday_list{
+		width: 100px;
+		margin-left: -1px;
+		height: 130px;
+	}
+}
+.time_now{
+	color: #999;
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	margin-right: 20px;
+	margin-top: 5px;
+	float: right !important;
+	
+}
+.calender_body{
+	
+	.main_dates{
+		// border: 1px solid #f1ebe4;
+		width: 450px;
+		float: left;
+		overflow: hidden;
+		ul li{
+			background-color: #fefbeb;
+			float: left;
+			width: 14%;
+			border-right: 1px solid #f1ebe4;
+			border-bottom: 1px solid #f1ebe4;
+			text-align: center;
+			font-size: 14px;
+			padding-top: 14px;
+			padding-bottom: 12px;
+			height: 13px;
+			line-height: 13px;
+			&:last-child{
+				border-right: 1px solid #f1ebe4;
+			}
+		}
+		ol li{
+			float: left;
+			width: 14%;
+			border-right: 1px solid #f1ebe4;
+			border-bottom: 1px solid #f1ebe4;
+			text-align: center;
+			font-size: 18px;
+			padding-top: 14px;
+			padding-bottom: 12px;
+			height: 36px;
+			line-height: 13px;
+			div{
+				width: 100%;
+				height: 18px;
+				line-height: 18px;
+				text-align: center;
+				font-weight: 600;
+			}
+			span{
+				width: 100%;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				font-size: 12px;
+				white-space: nowrap;
+				color: #999;
+			}
+			&:last-child{
+				border-right: 1px solid #f1ebe4;
+			}
+		}
+		.libg{
+			background-color: #fefbeb;
+		}
+	}
+	.main_nac{
+		//float: left;
+		width: auto;
+		overflow: hidden;
+		margin-left: -1px;
+		.main_nac_bar{
+			height: 40px;
+			overflow: hidden;
+			text-align: center;
+			span{
+				font-size: 12px;
+				line-height: 40px;
+				text-align: center;
+			}
+		}
+		.date_show_panel{
+			font-size: 60px;
+			color: #c00;
+			text-align: center;
+			line-height: 60px;
+			height: 60px;
+			padding: 10px 0px;
+		}
+		.desc{
+			font-size: 12px;
+			text-align: center;
+			line-height: 18px;
+			color: #999;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #d2d2d2;
+		}
+		.clearfix{
+			font-size: 12px;
+			div{
+				width: 70px;
+				display: inline-block;
+				text-align: center;
+				ul li{
+					line-height: 20px;
+				}
+			}
+			.suit{
+				color: #b04343;
+			}
+
+		}
+	}
+}

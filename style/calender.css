@@ -1,0 +1,389 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+dl {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#calender {
+  width: 600px;
+  border: 1px solid #d2d2d2;
+  margin-left: -275px;
+  margin-top: -210px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.calender_head {
+  background-color: #f3f5fa;
+  height: 35px;
+}
+.calender_head > div {
+  float: left;
+}
+.calender_head:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.year_control a,
+i,
+.month_control a,
+i,
+.holiday_control i {
+  background: url(../images/point.gif) no-repeat;
+}
+.year_control,
+.month_control,
+.holiday_control,
+.back_today {
+  position: relative;
+  height: 20px;
+  border: 1px solid #c9cccf;
+  margin-left: 10px;
+  margin-top: 5px;
+  background: url(../images/back_head.gif) repeat-x;
+}
+.year_control .pre_year,
+.month_control .pre_year,
+.holiday_control .pre_year,
+.back_today .pre_year,
+.year_control .next_year,
+.month_control .next_year,
+.holiday_control .next_year,
+.back_today .next_year,
+.year_control .pre_month,
+.month_control .pre_month,
+.holiday_control .pre_month,
+.back_today .pre_month,
+.year_control .next_month,
+.month_control .next_month,
+.holiday_control .next_month,
+.back_today .next_month {
+  float: left;
+  width: 15px;
+  height: 20px;
+}
+.year_control .year_bar,
+.month_control .year_bar,
+.holiday_control .year_bar,
+.back_today .year_bar,
+.year_control .month_bar,
+.month_control .month_bar,
+.holiday_control .month_bar,
+.back_today .month_bar,
+.year_control .holiday_bar,
+.month_control .holiday_bar,
+.holiday_control .holiday_bar,
+.back_today .holiday_bar,
+.year_control .back_today_bar,
+.month_control .back_today_bar,
+.holiday_control .back_today_bar,
+.back_today .back_today_bar {
+  float: left;
+  line-height: 20px;
+  min-width: 50px;
+  margin: 0 10px;
+  text-align: center;
+}
+.year_control .year_bar i,
+.month_control .year_bar i,
+.holiday_control .year_bar i,
+.back_today .year_bar i,
+.year_control .month_bar i,
+.month_control .month_bar i,
+.holiday_control .month_bar i,
+.back_today .month_bar i,
+.year_control .holiday_bar i,
+.month_control .holiday_bar i,
+.holiday_control .holiday_bar i,
+.back_today .holiday_bar i,
+.year_control .back_today_bar i,
+.month_control .back_today_bar i,
+.holiday_control .back_today_bar i,
+.back_today .back_today_bar i {
+  float: right;
+  background-position: 0 -50px;
+  width: 15px;
+  height: 12px;
+  cursor: pointer;
+  margin-right: -14px;
+}
+.year_control .year_bar .year_now,
+.month_control .year_bar .year_now,
+.holiday_control .year_bar .year_now,
+.back_today .year_bar .year_now,
+.year_control .month_bar .year_now,
+.month_control .month_bar .year_now,
+.holiday_control .month_bar .year_now,
+.back_today .month_bar .year_now,
+.year_control .holiday_bar .year_now,
+.month_control .holiday_bar .year_now,
+.holiday_control .holiday_bar .year_now,
+.back_today .holiday_bar .year_now,
+.year_control .back_today_bar .year_now,
+.month_control .back_today_bar .year_now,
+.holiday_control .back_today_bar .year_now,
+.back_today .back_today_bar .year_now,
+.year_control .year_bar .month_now,
+.month_control .year_bar .month_now,
+.holiday_control .year_bar .month_now,
+.back_today .year_bar .month_now,
+.year_control .month_bar .month_now,
+.month_control .month_bar .month_now,
+.holiday_control .month_bar .month_now,
+.back_today .month_bar .month_now,
+.year_control .holiday_bar .month_now,
+.month_control .holiday_bar .month_now,
+.holiday_control .holiday_bar .month_now,
+.back_today .holiday_bar .month_now,
+.year_control .back_today_bar .month_now,
+.month_control .back_today_bar .month_now,
+.holiday_control .back_today_bar .month_now,
+.back_today .back_today_bar .month_now,
+.year_control .year_bar .holiday_now,
+.month_control .year_bar .holiday_now,
+.holiday_control .year_bar .holiday_now,
+.back_today .year_bar .holiday_now,
+.year_control .month_bar .holiday_now,
+.month_control .month_bar .holiday_now,
+.holiday_control .month_bar .holiday_now,
+.back_today .month_bar .holiday_now,
+.year_control .holiday_bar .holiday_now,
+.month_control .holiday_bar .holiday_now,
+.holiday_control .holiday_bar .holiday_now,
+.back_today .holiday_bar .holiday_now,
+.year_control .back_today_bar .holiday_now,
+.month_control .back_today_bar .holiday_now,
+.holiday_control .back_today_bar .holiday_now,
+.back_today .back_today_bar .holiday_now,
+.year_control .year_bar .back_today_now,
+.month_control .year_bar .back_today_now,
+.holiday_control .year_bar .back_today_now,
+.back_today .year_bar .back_today_now,
+.year_control .month_bar .back_today_now,
+.month_control .month_bar .back_today_now,
+.holiday_control .month_bar .back_today_now,
+.back_today .month_bar .back_today_now,
+.year_control .holiday_bar .back_today_now,
+.month_control .holiday_bar .back_today_now,
+.holiday_control .holiday_bar .back_today_now,
+.back_today .holiday_bar .back_today_now,
+.year_control .back_today_bar .back_today_now,
+.month_control .back_today_bar .back_today_now,
+.holiday_control .back_today_bar .back_today_now,
+.back_today .back_today_bar .back_today_now {
+  font-size: 12px;
+}
+.year_control .holiday_bar,
+.month_control .holiday_bar,
+.holiday_control .holiday_bar,
+.back_today .holiday_bar {
+  min-width: 80px;
+}
+.year_control .holiday_bar i,
+.month_control .holiday_bar i,
+.holiday_control .holiday_bar i,
+.back_today .holiday_bar i {
+  margin-right: -8px;
+}
+.year_control .next_year,
+.month_control .next_year,
+.holiday_control .next_year,
+.back_today .next_year,
+.year_control .next_month,
+.month_control .next_month,
+.holiday_control .next_month,
+.back_today .next_month {
+  background-position: 0 -25px;
+}
+.year_control:after,
+.month_control:after,
+.holiday_control:after,
+.back_today:after {
+  content: "";
+  clear: both;
+}
+.year_control .year_list,
+.month_control .year_list,
+.holiday_control .year_list,
+.back_today .year_list,
+.year_control .month_list,
+.month_control .month_list,
+.holiday_control .month_list,
+.back_today .month_list,
+.year_control .holiday_list,
+.month_control .holiday_list,
+.holiday_control .holiday_list,
+.back_today .holiday_list {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  width: 70px;
+  margin-left: 15px;
+  background-color: #fff;
+  border: 1px solid #c9cccf;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  height: 100px;
+  overflow: auto;
+}
+.year_control .year_list li,
+.month_control .year_list li,
+.holiday_control .year_list li,
+.back_today .year_list li,
+.year_control .month_list li,
+.month_control .month_list li,
+.holiday_control .month_list li,
+.back_today .month_list li,
+.year_control .holiday_list li,
+.month_control .holiday_list li,
+.holiday_control .holiday_list li,
+.back_today .holiday_list li {
+  cursor: pointer;
+  color: #9a9a9a;
+  height: 18px;
+  line-height: 18px;
+}
+.year_control .year_list li:hover,
+.month_control .year_list li:hover,
+.holiday_control .year_list li:hover,
+.back_today .year_list li:hover,
+.year_control .month_list li:hover,
+.month_control .month_list li:hover,
+.holiday_control .month_list li:hover,
+.back_today .month_list li:hover,
+.year_control .holiday_list li:hover,
+.month_control .holiday_list li:hover,
+.holiday_control .holiday_list li:hover,
+.back_today .holiday_list li:hover {
+  background-color: #77a1b4;
+  color: #fff;
+}
+.year_control .holiday_list,
+.month_control .holiday_list,
+.holiday_control .holiday_list,
+.back_today .holiday_list {
+  width: 100px;
+  margin-left: -1px;
+  height: 130px;
+}
+.time_now {
+  color: #999;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 20px;
+  margin-top: 5px;
+  float: right !important;
+}
+.calender_body .main_dates {
+  width: 450px;
+  float: left;
+  overflow: hidden;
+}
+.calender_body .main_dates ul li {
+  background-color: #fefbeb;
+  float: left;
+  width: 14%;
+  border-right: 1px solid #f1ebe4;
+  border-bottom: 1px solid #f1ebe4;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  height: 13px;
+  line-height: 13px;
+}
+.calender_body .main_dates ul li:last-child {
+  border-right: 1px solid #f1ebe4;
+}
+.calender_body .main_dates ol li {
+  float: left;
+  width: 14%;
+  border-right: 1px solid #f1ebe4;
+  border-bottom: 1px solid #f1ebe4;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  height: 36px;
+  line-height: 13px;
+}
+.calender_body .main_dates ol li div {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+.calender_body .main_dates ol li span {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #999;
+}
+.calender_body .main_dates ol li:last-child {
+  border-right: 1px solid #f1ebe4;
+}
+.calender_body .main_dates .libg {
+  background-color: #fefbeb;
+}
+.calender_body .main_nac {
+  width: auto;
+  overflow: hidden;
+  margin-left: -1px;
+}
+.calender_body .main_nac .main_nac_bar {
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+.calender_body .main_nac .main_nac_bar span {
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+}
+.calender_body .main_nac .date_show_panel {
+  font-size: 60px;
+  color: #c00;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  padding: 10px 0px;
+}
+.calender_body .main_nac .desc {
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  color: #999;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.calender_body .main_nac .clearfix {
+  font-size: 12px;
+}
+.calender_body .main_nac .clearfix div {
+  width: 70px;
+  display: inline-block;
+  text-align: center;
+}
+.calender_body .main_nac .clearfix div ul li {
+  line-height: 20px;
+}
+.calender_body .main_nac .clearfix .suit {
+  color: #b04343;
+}

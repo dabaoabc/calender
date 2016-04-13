@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>万年历</title>
+	<link rel="stylesheet" type="text/css" href="style/calender.css">
+	<script src="script/time.js"></script>
+	<script src="script/index.js"></script>
+	<script src="script/lunner.js"></script>
+
+</head>
+<body>
+	<div id="calender">
+		<div class="calender_head">
+			<div class="year_control">
+				<a href="javascript:void(0)" class="pre_year"></a>
+				<div class="year_bar">
+					<i class="trigger"></i>
+					<div class="year_now"><span class="yearValue">2016</span>年</div>
+				</div>
+				<a href="javascript:void(0)" class="next_year"></a>
+				<ul class="year_list" style="display: none;">
+					<li val="1949">1949年</li><li val="1950">1950年</li><li val="1951">1951年</li><li val="1952">1952年</li><li val="1953">1953年</li><li val="1954">1954年</li><li val="1955">1955年</li><li val="1956">1956年</li><li val="1957">1957年</li><li val="1958">1958年</li><li val="1959">1959年</li><li val="1960">1960年</li><li val="1961">1961年</li><li val="1962">1962年</li><li val="1963">1963年</li><li val="1964">1964年</li><li val="1965">1965年</li><li val="1966">1966年</li><li val="1967">1967年</li><li val="1968">1968年</li><li val="1969">1969年</li><li val="1970">1970年</li><li val="1971">1971年</li><li val="1972">1972年</li><li val="1973">1973年</li><li val="1974">1974年</li><li val="1975">1975年</li><li val="1976">1976年</li><li val="1977">1977年</li><li val="1978">1978年</li><li val="1979">1979年</li><li val="1980">1980年</li><li val="1981">1981年</li><li val="1982">1982年</li><li val="1983">1983年</li><li val="1984">1984年</li><li val="1985">1985年</li><li val="1986">1986年</li><li val="1987">1987年</li><li val="1988">1988年</li><li val="1989">1989年</li><li val="1990">1990年</li><li val="1991">1991年</li><li val="1992">1992年</li><li val="1993">1993年</li><li val="1994">1994年</li><li val="1995">1995年</li><li val="1996">1996年</li><li val="1997">1997年</li><li val="1998">1998年</li><li val="1999">1999年</li><li val="2000">2000年</li><li val="2001">2001年</li><li val="2002">2002年</li><li val="2003">2003年</li><li val="2004">2004年</li><li val="2005">2005年</li><li val="2006">2006年</li><li val="2007">2007年</li><li val="2008">2008年</li><li val="2009">2009年</li><li val="2010">2010年</li><li val="2011">2011年</li><li val="2012">2012年</li><li val="2013">2013年</li><li val="2014" class="">2014年</li><li val="2015" class="">2015年</li><li val="2016" class="mh-on">2016年</li><li val="2017" class="">2017年</li><li val="2018" class="">2018年</li><li val="2019" class="">2019年</li><li val="2020" class="">2020年</li><li val="2021" class="">2021年</li><li val="2022" class="">2022年</li><li val="2023">2023年</li><li val="2024">2024年</li><li val="2025">2025年</li><li val="2026">2026年</li><li val="2027">2027年</li><li val="2028">2028年</li><li val="2029">2029年</li><li val="2030">2030年</li><li val="2031">2031年</li><li val="2032">2032年</li><li val="2033">2033年</li><li val="2034">2034年</li><li val="2035">2035年</li><li val="2036">2036年</li><li val="2037">2037年</li><li val="2038">2038年</li><li val="2039">2039年</li><li val="2040">2040年</li><li val="2041">2041年</li><li val="2042">2042年</li><li val="2043">2043年</li><li val="2044">2044年</li><li val="2045">2045年</li><li val="2046">2046年</li><li val="2047">2047年</li><li val="2048">2048年</li><li val="2049">2049年</li><li val="2050">2050年</li><li val="2051">2051年</li><li val="2052">2052年</li><li val="2053">2053年</li><li val="2054">2054年</li><li val="2055">2055年</li><li val="2056">2056年</li><li val="2057">2057年</li><li val="2058">2058年</li><li val="2059">2059年</li><li val="2060">2060年</li><li val="2061">2061年</li><li val="2062">2062年</li><li val="2063">2063年</li><li val="2064">2064年</li><li val="2065">2065年</li><li val="2066">2066年</li>	
+				</ul>
+			</div>
+
+
+			<div class="month_control">
+				<a href="javascript:void(0)" class="pre_month"></a>
+				<div class="month_bar">
+					<i class="trigger"></i>
+					<div class="month_now"><span class="monthValue">04</span>月</div>
+				</div>
+				<a href="javascript:void(0)" class="next_month"></a>
+				<ul class="month_list" style="display: none;">
+					<li val="01">01月</li>
+					<li val="02">02月</li>
+					<li val="03">03月</li>
+					<li val="04">04月</li>
+					<li val="05">05月</li>
+					<li val="06">06月</li>
+					<li val="07">07月</li>
+					<li val="08">08月</li>
+					<li val="09">09月</li>
+					<li val="10">10月</li>
+					<li val="11">11月</li>
+					<li val="12">12月</li>
+				</ul>
+			</div>
+
+
+			<div class="holiday_control">
+				<div class="holiday_bar">
+					<i class="trigger"></i>
+					<div class="holiday_now"><span class="holidayValue">节假日安排</span></div>
+				</div>
+				<ul class="holiday_list" style="display: none;">
+					<li val="元旦" value="01/01">元旦</li>
+					<li val="春节" value="02/08">春节</li>
+					<li val="清明节" value="04/01">清明节</li>
+					<li val="劳动节" value="05/01">劳动节</li>
+					<li val="端午节" value="06/09">端午节</li>
+					<li val="中秋节" value="09/25">中秋节</li>
+					<li val="国庆节" value="10/01">国庆节</li>
+				</ul>
+			</div>
+			<div class="back_today">
+				<div class="back_today_bar">
+					<div class="back_today_now">返回今天</div>
+				</div>
+			</div>
+			<div class="time_now" id="time_now">
+				<dl>
+					北京时间:
+					<span>00:00:00</span>
+				</dl>
+			</div>
+		</div>
+		<div class="calender_body">
+			<div class="main_dates">
+				<ul>
+					<li class="mh-days-title weekend end">日</li>
+					<li class="mh-days-title">一</li>
+					<li class="mh-days-title">二</li>
+					<li class="mh-days-title">三</li>
+					<li class="mh-days-title">四</li>
+					<li class="mh-days-title">五</li>
+					<li class="mh-days-title weekend">六</li>	
+				</ul>
+				<ol>
+				</ol>
+			</div>
+			<div class="main_nac">
+				<!-- ol>li*3>span.border+div.solar+span.lunar -->
+				<div class="main_nac_bar">
+					<span class="nac_date"><!-- 2016-04-09 --></span>
+					<span class="nac_weekday"><!-- 星期六 --></span>
+				</div>
+				<div class="date_show_panel"><!-- 9 --></div>
+				<div class="desc">
+					<div class="lunar"><!-- 农历三月初三 --></div>
+					<div class="ganzi"><!-- 甲午年 --></div>
+					<div class="animal_year"><!-- 猴年 --></div>
+<!-- 					<div class="holiday">元旦</div> -->
+				</div>
+				<div class="clearfix">
+					<div class="suit">
+						<h3>宜</h3>
+						<ul>
+							<li>捕捉</li>
+							<li>祭祀</li>
+							<li>入殓</li>
+							<li>移柩</li>
+							<li>启攒</li>
+						</ul>
+					</div>
+					<div class="avoid">
+						<h3>忌</h3>
+						<ul>
+							<li>捕捉</li>
+							<li>祭祀</li>
+							<li>入殓</li>
+							<li>移柩</li>
+							<li>启攒</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
